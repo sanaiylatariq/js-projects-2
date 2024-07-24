@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calories Burn Calculator App</h1>
+    <h3>Get Started</h3>
+    <h3></h3>
+    <input type="number"  name="" id="weight" placeholder="Weight in Pounds">
+    <br><br>
+    <input type="number"  name="" id="height" placeholder="Height in Inches">
+    <br><br>
+    <input type="age"  name="" id="age" placeholder="Age">
+    <br><br>
+    <input type="number"  name="" id="tim" placeholder="Time in minutes">
+    <br><br>
+    <input type="text"  name="" id="met" placeholder="Metabolic Equivalent of Task">
+    <br><br>
+    <button onclick="burn()">Calculate</button>
+    <br><br>
+    <div id="result"></div>
+    <div id="result1">MET GUIDELINES :1 MET: Resting or sitting quietly
+        <br><br>
+        2 METs: Light activities such as standing or slow walking
+        <br><br>
+        3 METs: Moderate activities like walking at 2.5 mph
+        <br><br>
+        4 METs: Brisk walking at 3.5 mph
+        <br><br>
+        5 METs: Light cycling or dancing
+        <br><br>
+        6 METs: Swimming or jogging at 5 mph
+        <br><br>
+        7 METs: Heavy cleaning or shoveling snow
+        <br><br>
+        8 METs: Running at 6 mph
+        <br><br>
+        9 METs: Jump rope or running at 7 mph
+        <br><br>
+        10 METs: High-intensity interval training (HIIT)</div>
+<script>
+function burn(){
+let weight = parseFloat(document.querySelector('#weight').value)
+let height = parseFloat(document.querySelector('#height').value)
+let age = parseFloat(document.querySelector('#age').value)
+let Time = parseFloat(document.querySelector('#tim').value)
+let met = parseFloat(document.querySelector('#met').value)
+
+if(isNaN(weight)||isNaN(height)||isNaN(age)||isNaN(Time)||isNaN(met)){
+    document.querySelector('#result').textContent = 'please enter valid values'
+    return
+}
+
+let result = (66+(6.2*weight)+(12.7*height)-(6.8*age)+(met*Time))*0.45
+document.querySelector('#result').textContent = 'Calories burned are ' + result.toFixed(2) + `calories`
+document.querySelector('#result').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result').style.border = 'none'
+document.querySelector('#result').style.padding = '12px'
+document.querySelector('#result').style.width = '250px'
+document.querySelector('#result').style.marginTop = '12px'
+document.querySelector('#result').style.marginBottom = '12px'
+document.querySelector('#result').style.borderRadius = '52px'
+document.querySelector('#result').style.textAlign = 'center'
+document.querySelector('#result1').style.width = '500px'
+document.querySelector('#result1').style.padding = '20px'
+document.querySelector('#result1').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result1').style.Color = 'rgb(15, 14, 14)'
+document.querySelector('#result1').style.borderRadius = '32px'
+}
+
+</script>
+</body>
+</html>

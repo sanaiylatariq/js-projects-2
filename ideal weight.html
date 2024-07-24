@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="Height in cm" id="height">
+    <button onclick="ideal()">Calculate</button>
+    <div id="result"></div>
+    <script>
+function ideal(){
+let height = parseFloat(document.querySelector('#height').value)
+let result = 45.5+0.91*(height-152)
+document.querySelector('#result').textContent = `Ideal Weight is `+result +`kg`
+document.querySelector('#result').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result').style.border = 'none'
+document.querySelector('#result').style.padding = '12px'
+document.querySelector('#result').style.width = '250px'
+document.querySelector('#result').style.marginTop = '12px'
+document.querySelector('#result').style.marginBottom = '12px'
+document.querySelector('#result').style.borderRadius = '52px'
+document.querySelector('#result').style.textAlign = 'center'
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

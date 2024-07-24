@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Length and Temperature converters</h1>
+    <h2>    Covert Length From Mertes to Foot
+    </h2>
+    <input type="number" id="length" placeholder="Length in metres">
+    <button onclick="len()">Convert</button>
+    <div id="result"></div>
+
+
+    <h2>    Covert Length From Foot to Metres
+    </h2>
+    <input type="number" id="length1" placeholder="Length in Foot">
+    <button onclick="len1()">Convert</button>
+    <div id="result1"></div>
+
+    <h2>    Covert Length From Centimetres to Metres
+    </h2>
+    <input type="number" id="length2" placeholder="Length in cm">
+    <button onclick="len2()">Convert</button>
+    <div id="result2"></div>
+    <h2>    Covert Length From Metres to Centimetres
+    </h2>
+    <input type="number" id="length3" placeholder="Length in m">
+    <button onclick="len3()">Convert</button>
+    <div id="result3"></div>
+
+    <h2>    Covert Length From Metres to inches
+    </h2>
+    <input type="number" id="length4" placeholder="Length in m">
+    <button onclick="len4()">Convert</button>
+    <div id="result4"></div>
+    <h2>    Covert Length From Inches to metres
+    </h2>
+    <input type="number" id="length5" placeholder="Length in inches">
+    <button onclick="len5()">Convert</button>
+    <div id="result5"></div>
+
+    <h2>    Covert Temperature from Fahrenheit to Celsius
+    </h2>
+    <input type="number" id="length6" placeholder="Temperature in Fahrenheit">
+    <button onclick="len6()">Convert</button>
+    <div id="result6"></div>
+
+    <h2>    Covert Temperature from Celsius to Fahrenheit
+    </h2>
+    <input type="number" id="length7" placeholder="Temperature in Celsius">
+    <button onclick="len7()">Convert</button>
+    <div id="result7"></div>
+
+
+    <h2>    Covert Temperature from Fahrenheit to Kelvin
+     </h2>
+    <input type="number" id="length8" placeholder="Temperature in Fahrenheit">
+    <button onclick="len8()">Convert</button>
+    <div id="result8"></div>
+
+<script>
+function len(){
+let length = parseFloat(document.querySelector('#length').value) 
+let formula = length*3.28084
+let result = formula.toFixed(2)
+document.querySelector('#result').textContent = result
+document.querySelector('#result').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result').style.border = 'none'
+document.querySelector('#result').style.padding = '12px'
+document.querySelector('#result').style.width = '100px'
+document.querySelector('#result').style.marginTop = '12px'
+document.querySelector('#result').style.marginBottom = '12px'
+document.querySelector('#result').style.borderRadius = '52px'
+document.querySelector('#result').style.textAlign = 'center'
+
+}
+
+function len2(){
+let length = parseFloat(document.querySelector('#length2').value) 
+let formula = length/100
+let result = formula.toFixed(2)
+document.querySelector('#result2').textContent = result
+document.querySelector('#result2').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result2').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result2').style.border = 'none'
+document.querySelector('#result2').style.padding = '12px'
+document.querySelector('#result2').style.width = '100px'
+document.querySelector('#result2').style.marginTop = '12px'
+document.querySelector('#result2').style.marginBottom = '12px'
+document.querySelector('#result2').style.borderRadius = '52px'
+document.querySelector('#result2').style.textAlign = 'center'
+
+}
+
+function len1(){
+let length = parseFloat(document.querySelector('#length1').value) 
+let formula = length/3.28084
+let result = formula.toFixed(2)
+document.querySelector('#result1').textContent = result
+document.querySelector('#result1').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result1').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result1').style.border = 'none'
+document.querySelector('#result1').style.padding = '12px'
+document.querySelector('#result1').style.width = '100px'
+document.querySelector('#result1').style.marginTop = '12px'
+document.querySelector('#result1').style.marginBottom = '12px'
+document.querySelector('#result1').style.borderRadius = '52px'
+document.querySelector('#result1').style.textAlign = 'center'
+
+}
+function len3(){
+let length = parseFloat(document.querySelector('#length3').value) 
+let formula = length*100
+let result = formula.toFixed(2)
+document.querySelector('#result3').textContent = result
+document.querySelector('#result3').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result3').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result3').style.border = 'none'
+document.querySelector('#result3').style.padding = '12px'
+document.querySelector('#result3').style.width = '100px'
+document.querySelector('#result3').style.marginTop = '12px'
+document.querySelector('#result3').style.marginBottom = '12px'
+document.querySelector('#result3').style.borderRadius = '52px'
+document.querySelector('#result3').style.textAlign = 'center'
+
+}
+
+function len4(){
+let length = parseFloat(document.querySelector('#length4').value) 
+let formula = length * 39.37
+let result = formula.toFixed(2)
+document.querySelector('#result4').textContent = result
+document.querySelector('#result4').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result4').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result4').style.border = 'none'
+document.querySelector('#result4').style.padding = '12px'
+document.querySelector('#result4').style.width = '100px'
+document.querySelector('#result4').style.marginTop = '12px'
+document.querySelector('#result4').style.marginBottom = '12px'
+document.querySelector('#result4').style.borderRadius = '52px'
+document.querySelector('#result4').style.textAlign = 'center'
+
+}
+function len5(){
+let length = parseFloat(document.querySelector('#length5').value) 
+let formula = length / 39.37
+let result = formula.toFixed(2)
+document.querySelector('#result5').textContent = result
+document.querySelector('#result5').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result5').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result5').style.border = 'none'
+document.querySelector('#result5').style.padding = '12px'
+document.querySelector('#result5').style.width = '100px'
+document.querySelector('#result5').style.marginTop = '12px'
+document.querySelector('#result5').style.marginBottom = '12px'
+document.querySelector('#result5').style.borderRadius = '52px'
+document.querySelector('#result5').style.textAlign = 'center'
+
+}
+
+function len6(){
+let length = parseFloat(document.querySelector('#length6').value) 
+let formula = (length-32)*0.5556
+let result = formula.toFixed(2)
+document.querySelector('#result6').textContent = result
+document.querySelector('#result6').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result6').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result6').style.border = 'none'
+document.querySelector('#result6').style.padding = '12px'
+document.querySelector('#result6').style.width = '100px'
+document.querySelector('#result6').style.marginTop = '12px'
+document.querySelector('#result6').style.marginBottom = '12px'
+document.querySelector('#result6').style.borderRadius = '52px'
+document.querySelector('#result6').style.textAlign = 'center'
+
+}
+
+
+function len7(){
+let length = parseFloat(document.querySelector('#length7').value) 
+let formula = (length*1.8)+32
+let result = formula.toFixed(2)
+document.querySelector('#result7').textContent = result
+document.querySelector('#result7').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result7').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result7').style.border = 'none'
+document.querySelector('#result7').style.padding = '12px'
+document.querySelector('#result7').style.width = '100px'
+document.querySelector('#result7').style.marginTop = '12px'
+document.querySelector('#result7').style.marginBottom = '12px'
+document.querySelector('#result7').style.borderRadius = '52px'
+document.querySelector('#result7').style.textAlign = 'center'
+
+}
+
+
+function len8(){
+let length = parseFloat(document.querySelector('#length8').value) 
+let formula = ((length-32)*0.5556)+273.15
+let result = formula.toFixed(2)
+document.querySelector('#result8').textContent = result
+document.querySelector('#result8').style.color = 'rgb(15, 14, 14)'
+document.querySelector('#result8').style.backgroundColor = 'rgb(219, 207, 153)'
+document.querySelector('#result8').style.border = 'none'
+document.querySelector('#result8').style.padding = '12px'
+document.querySelector('#result8').style.width = '100px'
+document.querySelector('#result8').style.marginTop = '12px'
+document.querySelector('#result8').style.marginBottom = '12px'
+document.querySelector('#result8').style.borderRadius = '52px'
+document.querySelector('#result8').style.textAlign = 'center'
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

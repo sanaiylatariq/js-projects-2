@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="num1" type="number" name="" placeholder="number one">
+    <input placeholder="action" type="text" name="" id="action">
+    <input id="num2" type="number" name="" placeholder="number two">
+<button onclick="calc()">calculate</button>
+<div id="result"></div>
+<script>
+function calc(){
+    let num1 = parseFloat(document.querySelector('#num1').value)
+    let num2 = parseFloat(document.querySelector('#num2').value)
+    let action = document.querySelector('#action').value
+let result;
+if(action==='*'){
+    result = num1*num2
+}else if(action==='/'){
+    result = num1/num2
+}else if(action==='+'){
+    result = num1+num2
+}else if(action==='-'){
+    result = num1-num2
+}else{
+    'enter valid number'
+}
+document.querySelector('#result').textContent = result.toFixed(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+</script>
+</body>
+</html>

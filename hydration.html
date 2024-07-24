@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="weight" placeholder="weight in kg" type="text">
+
+<input id="activitylevel" placeholder="Activity Level" type="text">
+<button onclick="water()">Calculate Water Requirement</button>
+<div id="result"></div>
+<div id="results"></div>
+<script>
+function water(){
+let weight = parseFloat(document.querySelector('#weight').value)
+let al = parseFloat(document.querySelector('#activitylevel').value)
+let result = (weight*0.033)+(al*0.5)
+document.querySelector('#result').textContent = `Water Requirement is   `+ result.toFixed(2) +` litres`
+document.querySelector('#results').textContent = `ACTIVITY LEVEL GUIDE: Little to no exercise => 1,  
+Light Exercise/ sports 1-3 days per week => 2 ,
+ Moderate exercise or sports 3-5 days per week => 3,
+ Very Active or sports 6-7 days a week => 4,
+ Extremely Active or  heavy sports or 2x training => 5 `
+
+}
+
+
+
+
+</script>
+
+
+
+
+</body>
+</html>
